@@ -1,0 +1,45 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,119,83)
+  { TextLabel1 TextLabel
+    MoveScaled(5,10,16,3)
+    Text = ("Eroare necaptata")
+  }
+  { TextLabel2 TextLabel
+    MoveScaled(24,10,17,3)
+    Text = ("Eroare incercata")
+  }
+  { TextLabel3 TextLabel
+    MoveScaled(44,10,16,3)
+    Text = ("Eroare capturata")
+  }
+  { TextLabel4 TextLabel
+    MoveScaled(66,10,16,3)
+    Text = ("Eroare finalizata")
+  }
+  { Button1 Button
+    MoveScaled(6,17,11,4)
+    Text = ("10/0")
+  }
+  { Button2 Button
+    MoveScaled(25,17,11,4)
+    Text = ("Try")
+  }
+  { Button3 Button
+    MoveScaled(46,17,11,4)
+    Text = ("10/0")
+  }
+  { Button4 Button
+    MoveScaled(68,17,11,4)
+    Text = ("10/0")
+  }
+  { TextLabel5 TextLabel
+    MoveScaled(88,10,17,4)
+    Text = ("Eroare capturata si finalizata")
+  }
+  { Button5 Button
+    MoveScaled(87,17,14,4)
+    Text = ("10/0")
+  }
+}

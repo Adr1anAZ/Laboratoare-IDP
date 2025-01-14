@@ -1,0 +1,8 @@
+' Gambas class file
+
+'Fișierul: FEval.class.
+' Gambas class file
+Private $hExpr As New Expression
+Private $cEnv As New Collection
+' Handlerul expresiei inițializat cu ob. Expresie.
+' Handlerul Environmentului, inițializat cu o

@@ -1,0 +1,30 @@
+' Gambas class file
+
+Static Public Sub Main()
+  Dim hForm As Form
+  hForm = New FEval ' ----------------------->
+  hForm.Show
+End
+
+Public Sub btnUpdate_Click()
+  Dim cCol As New Collection
+  If $hExpr.Text <> hExpr.Text Then
+    $hExpr.Text = hExpr.Text
+  Endif
+  'cEnv.Compare = gb.Case
+  $cEnv["a"] = Eval(txtValueA.Text)
+  $cEnv["b"] = Eval(txtValueB.Text)
+  $cEnv["x"] = Eval(txtValueX.Text)
+  $cEnv["y"] = Eval(txtValueY.Text)
+  $hExpr.Compile
+  $hExpr.Environment = $cEnv 'Vom compila !! expresia dată handlerului.
+' Handlerul Expression are o metoda Compile.
+' Dar are nevoie și de copia environmentului.
+txtResult.Text = Str($hExpr.Value)' Apelați metoda Value a handler-ului pt calcul !
+Catch
+txtResult.Text = Error.Text
+End' In caz de eroare/excepție se sare aici.
+' Explicația erorii este în obiectul Error.Text.
+Public Sub btnClose_Click()
+Me.Close
+End

@@ -1,0 +1,59 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { Label1 Label
+    MoveScaled(12,6,41,3)
+    Text = ("Exemplu simplu de evaluator al expresiilor")
+  }
+  { Label2 Label
+    MoveScaled(5,14,8,3)
+    Text = ("a =")
+  }
+  { Label3 Label
+    MoveScaled(5,21,8,3)
+    Text = ("b =")
+  }
+  { Label4 Label
+    MoveScaled(29,14,8,3)
+    Text = ("x =")
+  }
+  { Label5 Label
+    MoveScaled(29,20,8,3)
+    Text = ("y =")
+  }
+  { Label6 Label
+    MoveScaled(5,30,8,3)
+    Text = ("Expresie")
+  }
+  { Label7 Label
+    MoveScaled(5,36,8,3)
+    Text = ("Rezultat")
+  }
+  { btnUpdate Button
+    MoveScaled(8,44,16,4)
+    Text = ("Rezultat actualizat")
+  }
+  { btnClose Button
+    MoveScaled(32,44,16,4)
+    Text = ("Iesire")
+  }
+  { txtValueA ValueBox
+    MoveScaled(8,13,16,4)
+  }
+  { txtValueB ValueBox
+    MoveScaled(8,20,16,4)
+  }
+  { txtValueX ValueBox
+    MoveScaled(32,13,15,4)
+  }
+  { txtValueY ValueBox
+    MoveScaled(32,19,15,4)
+  }
+  { hExpr ValueBox
+    MoveScaled(15,29,24,4)
+  }
+  { txtResult ValueBox
+    MoveScaled(15,35,24,4)
+  }
+}

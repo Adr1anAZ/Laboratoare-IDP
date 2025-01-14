@@ -1,0 +1,34 @@
+' Gambas module file
+
+Public Sub Main()
+  
+  ' Declararea listei de numere
+  Dim numere As New Collection
+  Dim rezultat As Float
+  
+  ' Adăugăm numere în listă (inclusiv un zero)
+  numere.Add(2)
+  numere.Add(4)
+  numere.Add(0)  ' Acesta va genera eroare când încercăm inversarea
+  numere.Add(5)
+  
+  Print "Calculul inverselor numerelor:"
+  
+  ' Parcurgerea listei folosind For ... Each
+  For Each Val As Float In numere
+    Try
+      If Val = 0 Then 
+        Error.Raise("Împărțirea la zero nu este permisă.")
+      Endif
+      
+      rezultat = 1 / Val
+      Print "Inversa lui "; Val; " este "; rezultat
+      
+     Catch
+      Print "Eroare: Nu se poate calcula inversa pentru valoarea "; Val; "."
+    End Try
+  Next
+  
+  Print "Sfârșitul programului."
+
+End
