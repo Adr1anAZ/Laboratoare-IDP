@@ -1,0 +1,34 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,38,33)
+  { SpinBox1 SpinBox
+    MoveScaled(4,5,9,4)
+    MinValue = -10000
+    MaxValue = 10000
+  }
+  { TextBox1 TextBox
+    MoveScaled(4,19,9,4)
+  }
+  { Plus Button
+    MoveScaled(24,5,7,4)
+    Text = ("+")
+  }
+  { Minus Button
+    MoveScaled(24,11,7,4)
+    Text = ("-")
+  }
+  { Multiply Button
+    MoveScaled(24,17,7,4)
+    Text = ("*")
+  }
+  { Divide Button
+    MoveScaled(24,23,7,4)
+    Text = ("/")
+  }
+  { SpinBox2 SpinBox
+    MoveScaled(4,12,9,4)
+    MinValue = -10000
+    MaxValue = 10000
+  }
+}

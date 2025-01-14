@@ -1,0 +1,41 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,81,41)
+  { HBox1 HBox
+    MoveScaled(-1,0,82,10)
+    { l1 PictureBox
+      MoveScaled(0,0,12,15)
+      Picture = Picture["bloff.xpm"]
+    }
+    { l2 PictureBox
+      MoveScaled(11,0,12,15)
+      Picture = Picture["bloff.xpm"]
+    }
+    { l3 PictureBox
+      MoveScaled(22,0,12,15)
+      Picture = Picture["bloff.xpm"]
+    }
+    { l4 PictureBox
+      MoveScaled(33,0,12,15)
+      Picture = Picture["bloff.xpm"]
+    }
+    { l5 PictureBox
+      MoveScaled(44,0,12,15)
+      Picture = Picture["bloff.xpm"]
+    }
+    { l6 PictureBox
+      MoveScaled(55,0,12,15)
+      Picture = Picture["bloff.xpm"]
+    }
+    { l7 PictureBox
+      MoveScaled(66,0,12,15)
+      Picture = Picture["bloff.xpm"]
+    }
+    { Timer1 #Timer
+      #MoveScaled(77,4)
+      Enabled = True
+      Delay = 200
+    }
+  }
+}

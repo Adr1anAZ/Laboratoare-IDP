@@ -1,0 +1,8 @@
+' Gambas class file
+
+Public Sub Button1_Click()
+  
+  Label2.Text = "Salut, " & Nume_Interlocutor.text & "! Ma bucur sa lucrez cu tine!"
+  Print "Salutare!!!"
+  
+End

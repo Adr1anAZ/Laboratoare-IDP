@@ -1,0 +1,25 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,51,35)
+  { Label1 Label
+    MoveScaled(7,27,24,4)
+    Text = ("Maximul a trei numere:")
+  }
+  { Button1 Button
+    MoveScaled(4,20,19,4)
+    Text = ("Calcul")
+  }
+  { ValueBox1 ValueBox
+    MoveScaled(4,10,12,4)
+  }
+  { ValueBox2 ValueBox
+    MoveScaled(19,10,12,4)
+  }
+  { ValueBox3 ValueBox
+    MoveScaled(34,10,12,4)
+  }
+  { ValueBox4 ValueBox
+    MoveScaled(34,27,12,4)
+  }
+}

@@ -1,0 +1,37 @@
+' Gambas class file
+
+Public Sub Timer1_Timer()
+Dim diode As PictureBox
+Dim s As Integer
+' Subrutina acționată de ceas.
+' Diode va itera de-a lungul listei de leduri.
+' S este starea led-ului 0 = stins și 1 = aprins.
+For Each diode In [l1, l2, l3, l4, l5, l6, l7]
+s = Rnd() * 2
+If s = 0 Then
+diode.Picture = Picture["bloff.xpm"]
+Else
+diode.Picture = Picture["blon.xpm"]
+Endif
+Next
+End ' Bucla FOR EACH …IN [...] … NEXT
+' parcurge lista de leduri [l1,l2 … l8]
+' Daca starea generată aleator este 0
+' atunci diodei adică obiectului l i i se pune
+' imaginea neluminată bloff.xpm.
+' Altfel i se pune imaginea luminată blon.xpm.
+' Final de structură alternativă.
+' Final de buclă.
+Public Sub Form_Open() ' Subrutina de deschidere a formei principale.
+Dim hPict As Picture
+Dim diode As PictureBox ' Declarația manipulatorului unei imagini.
+' Variabila care va itera pe listă.
+hPict = Picture["blon.xpm"] ' Actualizăm manipulatorul și ne va oferi date.
+For Each diode In [l1, l2, l3, l4, l5, l6, l7]
+diode.Resize(hPict.Width, hPict.Height)
+diode.Background = Color.DarkGreen
+Next ' Pentru fiecare diodă din listă vom lua de la
+' manipulator dimensiunile imaginii și
+' vom modifica atributele diodei l i .
+Me.Resize(hPict.W * 8 + Me.W - Me.ClientW, hPict.H + Me.H - Me.ClientH) 'Interesant. Admite abrevieri.
+End

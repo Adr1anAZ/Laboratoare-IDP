@@ -1,0 +1,19 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,55,35)
+  Text = ("Hello World")
+  { Hello Button
+    MoveScaled(5,17,16,4)
+    Text = ("Hello")
+  }
+  { Quit Button
+    MoveScaled(33,17,16,4)
+    Text = ("Quit!")
+  }
+  { HelloWorld TextLabel
+    MoveScaled(15,7,24,4)
+    Text = ("Hello World!")
+    Alignment = Align.Center
+  }
+}

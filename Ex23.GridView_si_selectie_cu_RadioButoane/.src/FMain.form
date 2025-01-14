@@ -1,0 +1,32 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,63,64)
+  { GridView1 GridView
+    MoveScaled(2,3,31,29)
+  }
+  { ListBox1 ListBox
+    MoveScaled(41,3,17,29)
+  }
+  { Frame1 Frame
+    MoveScaled(2,34,31,21)
+    Margin = True
+    Text = ("                  Selectam animale    ")
+    { RadioButton1 RadioButton
+      MoveScaled(2,5,24,4)
+      Text = ("Domestice")
+    }
+    { RadioButton2 RadioButton
+      MoveScaled(2,13,24,4)
+      Text = ("Salbatice")
+    }
+  }
+  { Button1 Button
+    MoveScaled(41,40,16,4)
+    Text = ("Afiseaza selectia")
+  }
+  { Button2 Button
+    MoveScaled(41,49,16,4)
+    Text = ("Quit")
+  }
+}

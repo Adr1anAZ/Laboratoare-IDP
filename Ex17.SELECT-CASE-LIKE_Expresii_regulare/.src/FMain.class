@@ -1,0 +1,16 @@
+' Gambas class file
+
+' Încercați diferite intrări: 12/12/1966 , unu @doi.com și altele.
+
+Public Sub Form_Open()
+End
+Public Sub Button1_Click()
+Select Case TextBox1.Text
+Case Like "[0-9]*/[0-9]*/[0-9]*"
+Message.Info("Seamănă cu trei numere dintr-o dată calendaristică .")
+Case Like "[0-9a-zA-z]*@[0-9a-zA-z]*.com"
+Message.Info("Aduce cu o adresă de email din domeniul com.")
+Default
+Message.Error("Aceasta nu știu ce este!")
+End Select
+End

@@ -1,0 +1,26 @@
+' Gambas class file
+
+
+Public Sub SpinBox1_Change()
+' Dublu click-ul pe forma pe SpinBox creeaza aceasta subrutina.
+
+'If SpinBox1.Value <= 0 Then SpinBox1.Value = 1
+'If SpinBox1.Value >= 8 Then SpinBox1.Value = 7
+'Select Case SpinBox1.Value
+Dim ziua As Integer = SpinBox1.Value
+Print ziua
+If ziua <= 0 Then ziua = 1
+If ziua >= 8 Then ziua = 7
+Select Case ziua
+  Case 1 To 5
+    TextBox1.Text = "Zi lucratoare !"
+    Case 6
+      TextBox1.Text = "Sambata fac ore la F.R. "
+      Case 7 
+        TextBox1.Text = "Si duminica fac ore la F.R. "
+End Select
+' Recorectarea valorii afisate, fara a produce un ciclu de evenimente:
+' Intotdeauna faceti prelucarea numaidaca este nevoie si NU a fost facuta deja !
+If SpinBox1.Value <> ziua Then SpinBox1.Value = ziua
+
+End

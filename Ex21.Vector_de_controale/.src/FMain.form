@@ -1,0 +1,19 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,37,64)
+  { tbNumber TextBox
+    MoveScaled(4,5,30,9)
+    Text = (" ")
+  }
+  { btnDial Button
+    MoveScaled(1,17,17,8)
+    Background = Color.Green
+    Text = ("Call")
+  }
+  { btnClose Button
+    MoveScaled(19,17,17,8)
+    Background = Color.Red
+    Text = ("Close")
+  }
+}

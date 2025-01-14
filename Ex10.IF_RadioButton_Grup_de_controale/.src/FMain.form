@@ -1,0 +1,24 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,57,29)
+  { Label1 Label
+    MoveScaled(17,3,29,4)
+    Text = ("Ruleaza Android mobilul tau ?")
+  }
+  { RadioButton1 RadioButton RadioButoane
+    Name = "RadioButton1"
+    MoveScaled(4,11,24,4)
+    Text = ("Samsung")
+  }
+  { RadioButton2 RadioButton RadioButoane
+    Name = "RadioButton2"
+    MoveScaled(4,16,24,4)
+    Text = ("Iphone")
+  }
+  { RadioButton3 RadioButton RadioButoane
+    Name = "RadioButton3"
+    MoveScaled(4,21,24,4)
+    Text = ("Nokia")
+  }
+}

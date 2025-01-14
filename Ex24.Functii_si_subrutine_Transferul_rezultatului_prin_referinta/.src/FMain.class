@@ -1,0 +1,39 @@
+' Gambas class file
+
+' Evenimentul declanșat la deschiderea formularului.
+Public Sub Form_Open()
+  ' Se poate adăuga cod inițializare aici, dacă este nevoie.
+End
+
+' Funcție pentru calculul factorialului, întoarce un Long.
+Public Function fact(n As Long) As Long
+  Dim i As Long
+  Dim f As Long
+  f = 1 ' Elementul neutru la înmulțire.
+  For i = 1 To n
+    f = f * i
+  Next
+  Return f
+End
+
+' Subrutină pentru calculul factorialului, rezultat transmis prin referință.
+Public Sub Factorial(n As Long, ByRef prod As Long)
+  Dim i As Long
+  prod = 1
+  For i = 1 To n
+    prod = prod * i
+  Next
+End
+
+' Evenimentul declanșat la clic pe butonul btnCalculFactorial.
+Public Sub CalculFactorial_Click()
+  ' Calcul factorial folosind funcția fact.
+  ValueBox2.Value = fact(ValueBox1.Value) ' Apel de funcție, returnează o valoare.
+
+  ' Mesaj informativ.
+  Message.Info("Acum calculăm apelând o subrutină.", "OK")
+
+  ' Calcul factorial folosind subrutina Factorial.
+  Factorial(ValueBox1.Value, ValueBox2.Value)
+End
+

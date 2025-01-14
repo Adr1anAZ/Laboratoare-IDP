@@ -1,0 +1,39 @@
+' Gambas class file
+
+
+' Exemplul cu TabStrip.
+Public Sub _new()
+End
+Public Sub Form_Open()
+TabStrip1.Count = 4 'Încercați cu nr 5
+TabStrip1.Index = 2 'Schimba Tab-ul
+End
+Public Sub Button1_Click() 'Triunghi
+'La primul tab am folosit numele implicite pentru ValueBox
+'Aria = Baza x Inalțimea / 2
+ValueBox3.Value = ValueBox1.Value * ValueBox2.Value / 2
+'Ar putea genera eveniment la schimbarea din ValueBox-ul 3
+End
+Public Sub Button2_Click()
+'Cerc
+' Dar dacă copiem campuri dintr-un tab în altul și ștergem controale,
+' riscăm să pierdem ordinea sau să sărim peste unele numere
+' În acest caz redenumiți corespunzător ValueBox-urile.
+Dim Pi As Float = 3.141592654
+' Așa e ușor a scrie renumitul și utilul număr .
+AriaCercului.Value = Pi * Raza.Value ^ 2
+End
+Public Sub Button3_Click()
+'Dreptunghi
+'La al treilea tab am folosit numele noastre pentru ValueBox-uri
+Aria.Value = Baza.Value * Inaltimea.Value
+'Ar putea genera eveniment la schimbarea din ValueBox-ul Aria.
+End
+Public Sub Button4_Click()  'Trapez
+'Când denumirile controalelor cu date se repetă :(
+' de la un Tab la altul și nu mai putem folosi un
+' același nume, cum ar fi "înălțimea"
+Dim H As Float  ' Înălțimea
+H = ValueBox6.Value ' Colectez valoarea înălțimii
+ValueBox7.Value = (Baza1.Value + Baza2.Value) * H / 2
+End

@@ -1,0 +1,118 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,57,48)
+  { TabStrip1 TabStrip
+    MoveScaled(6,6,44,36)
+    Count = 4
+    Index = 0
+    Text = ("Triunghi")
+    { Button1 Button
+      MoveScaled(2,16,34,7)
+      Text = ("Calcul")
+    }
+    { Label1 Label
+      MoveScaled(2,5,8,4)
+      Text = ("Baza")
+    }
+    { ValueBox1 ValueBox
+      MoveScaled(12,5,24,4)
+    }
+    { ValueBox2 ValueBox
+      MoveScaled(13,11,23,4)
+    }
+    { Label2 Label
+      MoveScaled(2,11,11,4)
+      Text = ("Inaltimea")
+    }
+    { Label3 Label
+      MoveScaled(2,25,12,4)
+      Text = ("Rezultat")
+    }
+    { ValueBox3 ValueBox
+      MoveScaled(12,25,24,4)
+    }
+    Index = 1
+    Text = ("Cerc")
+    { Label4 Label
+      MoveScaled(5,5,8,4)
+      Text = ("Raza")
+    }
+    { Raza ValueBox
+      MoveScaled(13,5,24,4)
+    }
+    { Button2 Button
+      MoveScaled(5,14,32,7)
+      Text = ("Calcul")
+    }
+    { Label5 Label
+      MoveScaled(5,24,11,4)
+      Text = ("Aria Cercului")
+    }
+    { AriaCercului ValueBox
+      MoveScaled(18,24,18,4)
+    }
+    Index = 2
+    Text = ("Dreptunghi")
+    { Label6 Label
+      MoveScaled(3,2,7,4)
+      Text = ("Baza")
+    }
+    { Baza ValueBox
+      MoveScaled(12,2,27,4)
+    }
+    { Label7 Label
+      MoveScaled(3,9,10,4)
+      Text = ("Inaltimea")
+    }
+    { Inaltimea ValueBox
+      MoveScaled(14,9,25,4)
+    }
+    { Button3 Button
+      MoveScaled(3,15,36,7)
+      Text = ("Calcul")
+    }
+    { Label8 Label
+      MoveScaled(2,24,12,4)
+      Text = ("Aria")
+    }
+    { Aria ValueBox
+      MoveScaled(14,24,25,4)
+    }
+    Index = 3
+    Text = ("Trapez")
+    { Label9 Label
+      MoveScaled(3,3,8,4)
+      Text = ("Baza1")
+    }
+    { Label10 Label
+      MoveScaled(3,8,8,4)
+      Text = ("Baza2")
+    }
+    { Label11 Label
+      MoveScaled(3,13,10,4)
+      Text = ("Inaltimea")
+    }
+    { Button4 Button
+      MoveScaled(3,18,36,7)
+      Text = ("Calcul")
+    }
+    { Label12 Label
+      MoveScaled(2,26,11,4)
+      Text = ("Rezultat")
+    }
+    { Baza1 ValueBox
+      MoveScaled(10,3,29,4)
+    }
+    { Baza2 ValueBox
+      MoveScaled(10,8,29,4)
+    }
+    { ValueBox6 ValueBox
+      MoveScaled(14,13,25,4)
+    }
+    { ValueBox7 ValueBox
+      MoveScaled(15,26,24,4)
+    }
+    Index = 0
+  }
+}

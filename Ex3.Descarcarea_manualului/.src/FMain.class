@@ -1,0 +1,30 @@
+' Gambas class file
+
+Public Sub _new()
+End
+
+Public Sub ButtonDescarca_Click()
+
+ Dim hProc As Process 'Handler pentru Proces, tip de date
+Dim myURL As String 'Dar URL-ul este doar un String
+myURL = "http://distro.ibiblio.org/vectorlinux/Uelsk8s/GAMBAS/gambas-beginner-guide.pdf"
+hProc = Exec ["curl", myURL, "-o", User.Home & "/" & "New-gambas-beginner-guide.pdf"]
+Do While hProc.State = Process.Running 'Poate fi: Crashed,Running, Signaled, Stoped
+Select Case Label1.Text
+Case "/"
+Label1.Text = "-"
+Case "-"
+Label1.Text = "\\"
+Case "\\"
+Label1.Text = "|"
+Case "|" ' Implementare a unor noțiuni de teoria automatelor.
+Label1.Text = "/"
+Case Else
+Label1.Text = "|"
+End Select
+Wait 0.1 '100 msec
+Loop
+Label1.Text = "INACTIV !"
+Message.Info("Descărcare terminată!")
+
+End

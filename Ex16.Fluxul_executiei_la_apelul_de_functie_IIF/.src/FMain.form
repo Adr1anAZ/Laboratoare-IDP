@@ -1,0 +1,23 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,66,20)
+  { Label1 Label
+    MoveScaled(7,3,47,4)
+    Text = ("Compoaratie cu IF .. THEN ... ELSE si mesaje !")
+  }
+  { Button1 Button
+    MoveScaled(45,9,16,4)
+    Text = ("Compara")
+  }
+  { SpinBox1 SpinBox
+    MoveScaled(7,9,9,4)
+  }
+  { SpinBox2 SpinBox
+    MoveScaled(25,9,9,4)
+  }
+  { Label2 Label
+    MoveScaled(19,9,5,4)
+    Text = (">=")
+  }
+}

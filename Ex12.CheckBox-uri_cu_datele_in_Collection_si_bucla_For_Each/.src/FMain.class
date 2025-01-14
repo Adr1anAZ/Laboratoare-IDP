@@ -1,0 +1,37 @@
+' Gambas class file
+
+Public Sub _new()
+End
+
+Public Sub Form_Open()
+End
+
+Public Sub Button1_Click()
+  Dim i As String                             ' Variabila i de tip String
+  Dim Genuri As New Collection                ' Vectorul/Colecția numita Genuri
+  Dim Gen As String                           ' Variabila nefolosita.
+  
+  ' Extrag date din câmpurile formei și le adaug în colecție.
+  Genuri["Rock"] = Rock.Value
+  Genuri["Clasica"] = Clasica.Value
+  Genuri["Jazz"] = Jazz.Value
+  Genuri["Populara"] = Populara.Value
+  Genuri["Bluess"] = Bluess.Value             ' Adaug Bluess la colecție.
+
+  TextBox1.Text = "Tu asculți "
+  
+  ' Procesăm genurile cu virgule între elemente și punct la final.
+  Dim preferences As String = ""
+  For Each i In ["Rock", "Clasica", "Jazz", "Populara", "Bluess"]
+    If Genuri[i] <> 0 Then
+      preferences &= i & ", "
+    Endif
+  Next
+  
+  ' Eliminăm ultima virgulă și spațiu, apoi adăugăm punctul final.
+  If Len(preferences) > 0 Then
+    preferences = Left(preferences, Len(preferences) - 2) & "."
+  Endif
+  
+  TextBox1.Text &= preferences
+End

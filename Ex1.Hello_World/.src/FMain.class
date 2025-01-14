@@ -1,0 +1,15 @@
+' Gambas class file
+
+
+
+Public Sub Hello_Click()
+
+  Message.Info("Hello World !")
+
+End
+
+Public Sub Quit_Click()
+
+  Quit
+
+End

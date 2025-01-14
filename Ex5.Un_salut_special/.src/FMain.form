@@ -1,0 +1,23 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,34)
+  { TextLabel1 TextLabel
+    MoveScaled(3,4,20,3)
+    Text = ("Scrie-ti numele ->")
+  }
+  { TextLabel2 TextLabel
+    MoveScaled(3,23,12,3)
+    Text = ("Raspuns ->")
+  }
+  { Nume_Interlocutor TextBox
+    MoveScaled(28,3,26,4)
+  }
+  { Label2 TextLabel
+    MoveScaled(21,23,41,3)
+  }
+  { Button1 Button
+    MoveScaled(28,14,27,4)
+    Text = ("Salut")
+  }
+}

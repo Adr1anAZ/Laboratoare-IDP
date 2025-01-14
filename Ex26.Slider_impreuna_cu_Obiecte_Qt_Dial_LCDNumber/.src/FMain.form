@@ -1,0 +1,18 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,51,23)
+  { Dial1 Dial
+    MoveScaled(9,8,6,6)
+  }
+  { Label1 Label
+    MoveScaled(8,2,40,4)
+    Text = ("Dial este un Controler QT ca si LCDNumber")
+  }
+  { Slider1 Slider
+    MoveScaled(13,15,24,4)
+  }
+  { LCDLabel1 LCDLabel
+    MoveScaled(24,9,24,4)
+  }
+}

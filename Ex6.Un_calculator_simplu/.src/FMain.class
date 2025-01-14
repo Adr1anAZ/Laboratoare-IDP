@@ -1,0 +1,54 @@
+' Gambas class file
+
+Public xValue As Float
+Public yValue As Float
+Public rez As Float
+
+Public Function getData()
+  
+  xValue = SpinBox1.Value
+  yValue = SpinBox2.Value
+  
+End
+
+Public Sub Plus_Click()
+  
+  getData()
+  rez = xValue + yValue
+  
+  TextBox1.Text = Str(rez)
+  
+End
+
+Public Sub Minus_Click()
+  
+  getData()
+  rez = xValue - yValue
+  
+  TextBox1.Text = Str(rez)
+  
+End
+
+Public Sub Multiply_Click()
+  
+  getData()
+  rez = xValue * yValue
+  
+  TextBox1.Text = Str(rez)
+  
+End
+
+Public Sub Divide_Click()
+  
+  getData()
+  
+  If yValue <> 0 Then
+    rez = xValue / yValue
+    TextBox1.Text = Str(rez)
+    
+  Else 
+    Message.Error("Nu putem imparti la 0!")
+  Endif
+End
+
+

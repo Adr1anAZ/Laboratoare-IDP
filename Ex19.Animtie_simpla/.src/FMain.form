@@ -1,0 +1,12 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,58,40)
+  { Label1 Label
+    MoveScaled(17,3,30,4)
+    Text = ("Misca mouse-ul ca pe manivela !")
+  }
+  { PictureBox1 PictureBox
+    MoveScaled(4,10,48,27)
+  }
+}

@@ -1,0 +1,35 @@
+' Gambas class file
+
+Static Public Anterior As String = ""
+
+Public Sub _new()
+End
+
+Public Sub Form_Open()
+End
+
+Public Sub PuneInLista_Click()
+  ' Adăugăm un element nou în ListBox dacă nu este identic cu cel anterior
+  If ElementNou.Text = "" Then
+    Message.Warning("Introduceți un text înainte de a adăuga în listă!")
+    Return ' Ieșim din subrutină dacă textul este gol
+  Endif
+  
+  If Anterior = ElementNou.Text Then
+    ' Nu facem nimic dacă textul introdus este identic cu cel anterior
+  Else
+    Condimente.Add(ElementNou.Text) ' Adăugăm textul în ListBox-ul Condimente
+    Anterior = ElementNou.Text ' Actualizăm variabila Anterior
+  Endif
+End
+
+Public Sub Transfer_Click()
+  ' Transferăm elementul selectat din ListBox-ul Condimente în ListBox-ul Ciorba
+  If Condimente.Text = "" Then
+    Message.Warning("Nu ați selectat niciun element pentru transfer!")
+    Return ' Ieșim din subrutină dacă nu este selectat nimic
+  Endif
+
+  Ciorba.Add(Condimente.Text) ' Adăugăm elementul selectat în al doilea ListBox
+  Condimente.Remove(Condimente.Index) ' Ștergem elementul transferat din primul ListBox
+End
